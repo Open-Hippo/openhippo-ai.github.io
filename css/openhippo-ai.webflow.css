@@ -731,14 +731,14 @@
 }
 
 .image-hero-device {
-  width: 70%;
+  width: 16vw;
   height: auto;
   margin-left: 0;
   display: block;
   position: relative;
-  top: 19%;
+  top: auto;
   bottom: 0;
-  left: 25px;
+  left: auto;
   right: auto;
 }
 
@@ -954,6 +954,7 @@
   align-self: center;
   align-items: center;
   width: 100%;
+  margin-top: 20px;
   padding-top: 0;
   padding-bottom: 0;
   display: flex;
@@ -2815,7 +2816,7 @@
 .div-block {
   align-self: center;
   width: auto;
-  height: 36vh;
+  height: auto;
   position: relative;
 }
 
@@ -2831,9 +2832,9 @@
 
 @media screen and (min-width: 1440px) {
   .image-hero-device {
-    width: 60%;
+    width: 14vw;
     top: 0%;
-    left: 20%;
+    left: 0%;
   }
 
   .hero-section {
@@ -2910,7 +2911,7 @@
   }
 
   .image-hero-device {
-    width: 70%;
+    width: 18vw;
     height: auto;
     max-height: 45em;
     bottom: -2.5vh;
@@ -3278,10 +3279,11 @@
 
 @media screen and (max-width: 767px) {
   .image-hero-device {
-    width: 50%;
+    width: 14vw;
     height: auto;
-    top: 15%;
-    left: 25%;
+    top: auto;
+    bottom: auto;
+    left: auto;
   }
 
   .ui-image-wrapper {
@@ -3428,7 +3430,7 @@
   }
 
   .div-block {
-    width: 37vw;
+    width: auto;
     margin-top: 40px;
     margin-bottom: 0;
   }
@@ -3436,6 +3438,7 @@
 
 @media screen and (max-width: 479px) {
   .image-hero-device {
+    width: 25vw;
     height: auto;
     margin-top: -15px;
     top: 0%;
@@ -3828,6 +3831,7 @@
   .div-block {
     width: auto;
     height: auto;
+    margin-top: 40px;
   }
 }
 
