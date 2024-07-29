@@ -16,6 +16,7 @@
   --on-tertiary: #fdf2f8;
   --tertiary-container: #e5bad8;
   --walsh--azure: #e7f1f1;
+  --text: rgba(0, 0, 0, .6);
   --walsh--walsh-light-green: #c2ecd5;
   --walsh--walsh-mid-green: #47888a;
   --black: black;
@@ -898,7 +899,7 @@
 
 .paragraph-serif-left-hero {
   color: var(--walsh--black);
-  max-width: 22em;
+  max-width: 28em;
   margin-bottom: .75em;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
   font-size: 1.4em;
@@ -1743,18 +1744,28 @@
 }
 
 .link-wrapper {
+  box-sizing: border-box;
+  aspect-ratio: auto;
   color: rgba(0, 0, 0, .85);
   white-space: nowrap;
+  object-fit: fill;
+  background-image: url('../images/link.png');
+  background-position: 0%;
+  background-repeat: no-repeat;
+  background-size: 2vw;
   border-bottom: 1px dashed #c5c5c5;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  width: 8.1rem;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 2vw;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
   font-size: 1.2em;
   font-weight: 500;
   text-decoration: none;
-  display: none;
+  display: block;
+  overflow: visible;
 }
 
 .link-wrapper:hover {
@@ -2830,6 +2841,41 @@
   text-decoration: none;
 }
 
+.div-block-2 {
+  display: flex;
+}
+
+.text-block {
+  width: auto;
+}
+
+.text-block.link {
+  text-transform: none;
+  background-image: url('../images/link.png');
+  background-position: 17% 0;
+  background-repeat: no-repeat;
+  background-size: 3vh;
+  margin-right: 0;
+  padding-left: 3vw;
+  padding-right: 0;
+}
+
+.div-block-3 {
+  flex: none;
+  align-self: auto;
+  display: flex;
+}
+
+.link-2.link-wrapper.link-inline {
+  color: var(--text);
+  background-size: 1.5vw;
+  width: auto;
+  padding-left: 1.5vw;
+  font-size: 1em;
+  font-weight: 400;
+  display: inline;
+}
+
 @media screen and (min-width: 1440px) {
   .image-hero-device {
     width: 14vw;
@@ -3275,6 +3321,11 @@
   .div-block {
     margin-bottom: 30px;
   }
+
+  .link-2.link-wrapper.link-inline {
+    background-size: 2vw;
+    padding-left: 2.5vw;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -3327,6 +3378,10 @@
 
   .rounded-block {
     border-radius: 20px;
+  }
+
+  .main-paragraph {
+    color: var(--text);
   }
 
   .content-wrap {
@@ -3433,6 +3488,34 @@
     width: auto;
     margin-top: 40px;
     margin-bottom: 0;
+  }
+
+  .link-2 {
+    background-image: url('../images/link.png');
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: 3vw;
+    padding-left: 3vw;
+  }
+
+  .link-2.link-wrapper.link-inline-text {
+    box-sizing: border-box;
+    aspect-ratio: auto;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+  }
+
+  .link-2.link-wrapper.link-inline {
+    box-sizing: border-box;
+    color: var(--text);
+    object-fit: none;
+    background-size: 2.5vw;
+    width: auto;
+    padding-left: 3vw;
+    font-size: 1em;
+    font-weight: 400;
+    display: inline;
   }
 }
 
@@ -3832,6 +3915,11 @@
     width: auto;
     height: auto;
     margin-top: 40px;
+  }
+
+  .link-2.link-wrapper.link-inline {
+    background-size: 2vw;
+    padding-left: 2.5vw;
   }
 }
 
