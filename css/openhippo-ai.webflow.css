@@ -2856,6 +2856,23 @@
   display: inline;
 }
 
+.utility-page-wrap {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  display: flex;
+}
+
+.utility-page-content {
+  text-align: center;
+  flex-direction: column;
+  width: 260px;
+  display: flex;
+}
+
 @media screen and (min-width: 1440px) {
   .image-hero-device {
     width: 14vw;
@@ -3905,7 +3922,7 @@
 
 #w-node-_24f81159-0cf9-ca16-5a4e-b36def26a1bb-c552d68f {
   grid-area: 1 / 7 / 2 / 13;
-  place-self: end center;
+  place-self: center;
 }
 
 #w-node-_24f81159-0cf9-ca16-5a4e-b36def26a1bd-c552d68f {
