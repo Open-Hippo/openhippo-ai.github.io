@@ -2873,6 +2873,34 @@
   display: flex;
 }
 
+.heading-contact {
+  color: var(--secondary);
+  text-align: center;
+  letter-spacing: -.02em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Luckiest Guy, sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  line-height: .95;
+}
+
+.heading-contact.primary {
+  color: var(--primary);
+  text-align: center;
+  height: auto;
+}
+
+.mailus {
+  color: var(--on-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1.2em;
+}
+
+.mailus.on-primary-container {
+  color: var(--on-primary-container);
+}
+
 @media screen and (min-width: 1440px) {
   .image-hero-device {
     width: 14vw;
@@ -3323,6 +3351,10 @@
     background-size: 2vw;
     padding-left: 2.5vw;
   }
+
+  .heading-contact {
+    font-size: 4em;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -3513,6 +3545,10 @@
     font-size: 1em;
     font-weight: 400;
     display: inline;
+  }
+
+  .heading-contact {
+    font-size: 3em;
   }
 }
 
@@ -3917,6 +3953,14 @@
   .link-2.link-wrapper.link-inline {
     background-size: 2vw;
     padding-left: 2.5vw;
+  }
+
+  .heading-contact {
+    font-size: 2.7em;
+  }
+
+  .mailus {
+    font-size: 16px;
   }
 }
 
