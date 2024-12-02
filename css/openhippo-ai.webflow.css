@@ -901,12 +901,14 @@ h3 {
 
 .paragraph-serif-left-hero {
   color: var(--walsh--black);
+  text-align: center;
   max-width: 28em;
   margin-bottom: .75em;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1.4em;
   font-weight: 500;
   line-height: 1.6;
+  display: block;
 }
 
 .hero-p-wrapper {
@@ -2678,8 +2680,10 @@ h3 {
 .main-grid-2 {
   grid-column-gap: 2.2em;
   grid-row-gap: 2.2em;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template: ". . . ."
+                 "Area . . Area-2"
+                 ". . . ."
+                 / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: start;
   width: 100%;
   position: relative;
@@ -2951,10 +2955,15 @@ h3 {
 }
 
 .openhippo-block {
+  aspect-ratio: auto;
   object-fit: fill;
   background-color: #fff;
   border-radius: 15px;
+  flex-flow: column;
+  width: auto;
+  height: auto;
   padding-bottom: 24px;
+  display: block;
 }
 
 .team-member-image-two {
@@ -2996,6 +3005,7 @@ h3 {
 
 .team-slider-arrow {
   display: none;
+  overflow: visible;
 }
 
 .team-slider-nav {
@@ -3108,6 +3118,155 @@ h3 {
   text-align: center;
   overflow-wrap: normal;
   display: block;
+}
+
+.pricing-overview {
+  border-bottom: 1px solid #e4ebf3;
+  padding: 80px 30px;
+  position: relative;
+}
+
+.container-3 {
+  text-align: left;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.centered-heading-2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.pricing-description {
+  text-align: center;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-grid {
+  grid-column-gap: 64px;
+  grid-row-gap: 50px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  margin-top: 50px;
+  display: grid;
+}
+
+.pricing-card-three {
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.pricing-image {
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.pricing-card-text {
+  margin-bottom: 20px;
+}
+
+.text-link-arrow-2 {
+  color: #1a1b1f;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  display: flex;
+}
+
+.arrow-embed-2 {
+  margin-left: 2px;
+  display: flex;
+}
+
+.team-slider-2 {
+  background-color: var(--surface-container);
+  border-bottom: 1px solid #e4ebf3;
+  padding: 80px 30px;
+  position: relative;
+}
+
+.centered-subheading-2 {
+  text-align: center;
+  max-width: 530px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.serviceslider {
+  background-color: #0000;
+  height: auto;
+  margin-top: 50px;
+}
+
+.servicewrapper {
+  width: 30%;
+  margin-right: 5%;
+}
+
+.team-block {
+  background-color: #fff;
+  padding-bottom: 24px;
+}
+
+.team-member-image-two-2 {
+  margin-bottom: 18px;
+}
+
+.team-block-info-2 {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+}
+
+.team-member-name-two-2 {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.team-member-text-2 {
+  margin-bottom: 20px;
+}
+
+.team-slider-arrow-2 {
+  display: none;
+}
+
+.team-slider-nav-2 {
+  margin-top: 24px;
+  font-size: 10px;
+  position: static;
+  bottom: -60px;
+}
+
+.paragraph {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 14em;
+  font-weight: 500;
+}
+
+.div-block-5 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 @media screen and (min-width: 1440px) {
@@ -3599,6 +3758,19 @@ h3 {
   .gallery-slider-right {
     right: -20px;
   }
+
+  .container-3 {
+    max-width: 728px;
+  }
+
+  .pricing-grid {
+    grid-column-gap: 30px;
+  }
+
+  .servicewrapper {
+    width: 47%;
+    margin-right: 6%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -3814,6 +3986,10 @@ h3 {
 
   .gallery-slider-right {
     right: -20px;
+  }
+
+  .pricing-overview, .team-slider-2 {
+    padding: 60px 15px;
   }
 }
 
@@ -4257,16 +4433,23 @@ h3 {
   .gallery-slider-right {
     right: -20px;
   }
-}
 
-#w-node-_24f81159-0cf9-ca16-5a4e-b36def26a1bb-c552d68f {
-  grid-area: 1 / 7 / 2 / 13;
-  place-self: center;
-}
+  .container-3 {
+    max-width: none;
+  }
 
-#w-node-_24f81159-0cf9-ca16-5a4e-b36def26a1bd-c552d68f {
-  grid-area: 1 / 2 / 2 / 7;
-  align-self: center;
+  .centered-heading-2 {
+    margin-bottom: 24px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .servicewrapper {
+    width: 100%;
+    margin-right: 0%;
+  }
 }
 
 #w-node-_6f43c7f0-6126-97d2-d0c4-aaf2d087a604-d087a601 {
@@ -4340,14 +4523,6 @@ h3 {
 }
 
 @media screen and (max-width: 991px) {
-  #w-node-_24f81159-0cf9-ca16-5a4e-b36def26a1bb-c552d68f {
-    grid-area: 2 / 1 / 3 / 3;
-  }
-
-  #w-node-_24f81159-0cf9-ca16-5a4e-b36def26a1bd-c552d68f {
-    grid-area: 1 / 1 / 2 / 3;
-  }
-
   #w-node-_6f43c7f0-6126-97d2-d0c4-aaf2d087a604-d087a601 {
     grid-column-end: 3;
   }
@@ -4399,11 +4574,7 @@ h3 {
 }
 
 @media screen and (max-width: 479px) {
-  #w-node-_24f81159-0cf9-ca16-5a4e-b36def26a1bb-c552d68f {
-    grid-area: 2 / 1 / 3 / 3;
-  }
-
-  #w-node-_24f81159-0cf9-ca16-5a4e-b36def26a1bd-c552d68f, #w-node-_6f43c7f0-6126-97d2-d0c4-aaf2d087a604-d087a601 {
+  #w-node-_6f43c7f0-6126-97d2-d0c4-aaf2d087a604-d087a601 {
     grid-area: 1 / 1 / 2 / 3;
   }
 
