@@ -3535,8 +3535,9 @@ h3 {
 
 .features-image {
   object-fit: cover;
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  max-width: 120%;
+  height: 120px;
   margin-right: 16px;
 }
 
@@ -3826,7 +3827,11 @@ h3 {
 
   .heading-1 {
     padding-top: 20px;
-    font-size: 3em;
+    font-size: 6em;
+  }
+
+  .main-grid-no-gap.hero-section {
+    margin-top: 20px;
   }
 
   .hero-section {
@@ -3895,6 +3900,10 @@ h3 {
   .pricing-tag {
     background-color: var(--secondary);
     color: var(--on-primary);
+  }
+
+  .pricing-card-2.featured-pricing {
+    border: 6px solid var(--secondary);
   }
 }
 
@@ -4569,6 +4578,7 @@ h3 {
 
   .logo-footer {
     max-height: 32px;
+    margin-bottom: 20px;
   }
 
   .circle {
@@ -5110,6 +5120,11 @@ h3 {
     padding: 4em 2.5em;
   }
 
+  .footer-inner-menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .walsh-footer-grid-social {
     justify-content: center;
     width: 100%;
@@ -5266,9 +5281,9 @@ h3 {
   }
 
   .features-block-two {
-    flex-direction: column;
+    flex-flow: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 30px;
   }
 
@@ -5296,14 +5311,14 @@ h3 {
   align-self: center;
 }
 
-#w-node-_6f43c7f0-6126-97d2-d0c4-aaf2d087a606-d087a601 {
-  grid-area: 2 / 4 / 3 / 10;
-  place-self: center;
-}
-
 #w-node-_6f43c7f0-6126-97d2-d0c4-aaf2d087a60d-d087a601 {
   grid-area: 1 / 3 / 2 / 11;
   align-self: center;
+}
+
+#w-node-_6f43c7f0-6126-97d2-d0c4-aaf2d087a606-d087a601 {
+  grid-area: 2 / 4 / 3 / 10;
+  place-self: center;
 }
 
 #w-node-_6962efe7-c88e-e641-2026-acd4bf59a165-bf59a162 {
@@ -5388,13 +5403,13 @@ h3 {
     grid-column-end: 3;
   }
 
+  #w-node-_6f43c7f0-6126-97d2-d0c4-aaf2d087a60d-d087a601 {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
   #w-node-_6f43c7f0-6126-97d2-d0c4-aaf2d087a606-d087a601 {
     grid-area: 4 / 1 / 5 / 3;
     justify-self: start;
-  }
-
-  #w-node-_6f43c7f0-6126-97d2-d0c4-aaf2d087a60d-d087a601 {
-    grid-area: 2 / 1 / 3 / 3;
   }
 
   #w-node-_6962efe7-c88e-e641-2026-acd4bf59a165-bf59a162 {
