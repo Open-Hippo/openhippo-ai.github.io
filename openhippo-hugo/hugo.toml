@@ -1,0 +1,39 @@
+baseURL = 'https://www.openhippo.ai/'
+languageCode = 'de-de'
+title = 'Open Hippo - Wir bauen KI.'
+
+# Site configuration
+[params]
+  description = "Open Hippo – Ihre sichere, DSGVO‑ & EU‑AI‑gesetz‑konforme KI‑Plattform aus Deutschland"
+  author = "Open Hippo"
+  keywords = ["KI", "Künstliche Intelligenz", "DSGVO", "Deutschland", "AI Platform"]
+  
+# SEO and social media
+[params.social]
+  twitter_image = "/images/Logo-OpenHippo-f-rgb-p-2600.png"
+  og_image = "/images/Logo-OpenHippo-f-rgb-p-2600.png"
+
+# Navigation menu
+[menu]
+  [[menu.main]]
+    name = "Hippo Token"
+    url = "/api/"
+    weight = 10
+  [[menu.main]]
+    name = "Hippo Chat"
+    url = "/platform/"
+    weight = 20
+  [[menu.main]]
+    name = "Hippo On-Prem"
+    url = "/server/"
+    weight = 30
+  [[menu.main]]
+    name = "Hippo Consulting"
+    url = "/consulting/"
+    weight = 40
+
+# Markup configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,46 @@
+<section class="pricing-comparison-2">
+  <div class="container-7">
+    <div class="pricing-wrapper-2">
+      {{ range .tiers }}
+      <div class="pricing-card-2{{ if .featured }} featured-pricing{{ end }}">
+        {{ with .image }}
+        <img src="{{ . }}" loading="lazy" alt="" 
+             {{ with .imageSrcset }}srcset="{{ . }}"{{ end }}
+             {{ with .imageSizes }}sizes="{{ . }}"{{ end }}
+             class="pricing-image-3">
+        {{ end }}
+        
+        <h2 class="heading-large">{{ .name }}</h2>
+        <div class="pricing-price-2">{{ .price }}</div>
+        <div class="paragraph-regular-2 margin-bottom-20">{{ .period }}</div>
+        
+        {{ with .cta }}
+        <a href="{{ .url }}" {{ if .external }}target="_blank"{{ end }} class="link-block w-inline-block">
+          <div class="button-primary">{{ .text }}</div>
+        </a>
+        {{ end }}
+        
+        <div class="pricing-divider-2"></div>
+        
+        {{ if .features }}
+        <ul role="list" class="pricing-feature-list-2 w-list-unstyled">
+          {{ range .features }}
+          <li>
+            <div class="pricing-feature-2">{{ . }}</div>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        
+        {{ if .featured }}
+        <div class="pricing-tag-2">Recommended</div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  
+  {{ if .additionalFeatures }}
+  {{ partial "features-section.html" .additionalFeatures }}
+  {{ end }}
+</section>

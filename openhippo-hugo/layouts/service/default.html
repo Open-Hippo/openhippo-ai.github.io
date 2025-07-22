@@ -1,0 +1,54 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+{{ if .Params.hero }}
+<div id="home" class="hero-section w-container">
+  <div class="w-layout-grid main-grid-no-gap hero-section">
+    <div class="div-block"></div>
+  </div>
+</div>
+<div class="w-layout-grid main-grid-no-gap hero-section">
+  <div class="div-block"></div>
+  <div class="left-hero">
+    <div>
+      <h3 class="heading-1">{{ .Params.hero.title }}</h3>
+      <h3 class="heading-1 primary">{{ .Params.hero.title_highlight }}</h3>
+    </div>
+    <div class="hero-p-wrapper">
+      <p class="paragraph-serif-left-hero">{{ .Params.hero.subtitle }}</p>
+    </div>
+    <div class="hero-div-block">
+      <a href="{{ .Params.hero.cta_url }}" class="button-primary-large w-inline-block">
+        <div class="button-label-wrapper">
+          <div class="label-button">{{ .Params.hero.cta_text }}</div>
+          <div class="arrow-wrapper">
+            <img src="/images/icon-arrow-right-white.svg" loading="lazy" alt="" class="icon-arrow-flip">
+            <img src="/images/icon-arrow-right-white.svg" loading="lazy" alt="" class="icon-arrow-flip">
+          </div>
+        </div>
+        <div class="button-hover-fill"></div>
+      </a>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Content Sections -->
+{{ range .Params.sections }}
+  {{ partial "content-image-section.html" . }}
+{{ end }}
+
+<!-- Features Section -->
+{{ if .Params.features }}
+  {{ partial "features-section.html" .Params.features }}
+{{ end }}
+
+<!-- Testimonial Section -->
+{{ if .Params.testimonial }}
+  {{ partial "testimonial-section.html" .Params.testimonial }}
+{{ end }}
+
+<!-- Contact Section -->
+{{ partial "contact.html" . }}
+
+{{ end }}
