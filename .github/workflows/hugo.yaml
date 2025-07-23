@@ -89,10 +89,22 @@ jobs:
           path: ./public
 
   # Deployment job
-  deploy:
+  deploy-io:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://www.openhippo.io
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+  
+  # Deployment job
+  deploy-ai:
+    environment:
+      name: github-pages
+      url: https://www.openhippo.ai
     runs-on: ubuntu-latest
     needs: build
     steps:
