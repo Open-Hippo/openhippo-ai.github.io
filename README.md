@@ -1,1 +1,1 @@
-This is the website for www.openhippo.io.
+This is the company website.
