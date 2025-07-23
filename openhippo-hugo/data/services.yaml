@@ -7,7 +7,7 @@ api:
 platform:
   title: "Hippo Chat"
   description: "Unsere KI-Plattform bietet Ihnen fortschrittliches Wissensmanagement und eine nahtlose Integration in Ihre Unternehmens-IT."
-  image: "/images/WebsiteImages_Development-13.jpg"
+  image: "/images/WebsiteImages_OnPrem-04.jpg"
   url: "/platform/"
 
 server:

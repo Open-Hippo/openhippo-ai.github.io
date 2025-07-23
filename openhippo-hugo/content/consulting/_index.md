@@ -52,7 +52,7 @@ image = "/images/WebsiteImages_OnPrem-08.jpg"
 description = "Workshops zur strategischen Planung und Erarbeitung Ihrer KI-Roadmap."
 
 [[features.features]]
-image = "/images/WebsiteImages_Development-07.jpg"
+image = "/images/WebsiteImages_Development-15.jpg"
 description = "Unterstützung bei der Auswahl passender KI-Anwendungen für Ihre Unternehmensziele."
 
 [[features.features]]

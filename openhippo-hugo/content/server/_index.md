@@ -31,7 +31,7 @@ url = "#contact"
 tag = "Wie stellen Sie eine nahtlose Integration sicher?"
 title = "Ihre Infrastruktur - unsere Expertise."
 content = "Wir kümmern uns um die Einrichtung und Anpassung Ihrer KI-Infrastruktur, um eine nahtlose Integration mit Ihren bestehenden Systemen zu gewährleisten. Nach der Installation bieten wir Ihnen kontinuierlichen Support und Wartung Ihrer Server an. Um einen professionellen Betrieb zu sichern, arbeiten wir mit regionalen IT-Systemhäusern zusammen, die über langjährige Erfahrung in der Bereitstellung von IT-Infrastrukturen verfügen. So sind Sie stets in besten Händen."
-image = "/images/WebsiteImages_Trianing-17.jpg"
+image = "/images/WebsiteImages_Development-10.jpg"
 imagePosition = "left"
 [sections.cta]
 text = "Lassen Sie sich beraten"

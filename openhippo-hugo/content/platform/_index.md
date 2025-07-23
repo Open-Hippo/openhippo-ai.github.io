@@ -20,7 +20,7 @@ cta_url = "#contact"
 [[sections]]
 tag = "Was ist Hippo Chat?"
 title = "Hippo Chat: Machen Sie Ihr Unternehmen wettbewerbsfähig mit KI"
-content = "Mit unserer benutzerfreundlichen KI-Plattform erhalten Ihre Mitarbeiter einen zentralen Zugang zu KI. Erstellen Sie beispielsweise eine Wissensdatenbank für Ihr Unternehmen und lassen Sie die KI passende Berichte und Datenblätter recherchieren. Gestalten Sie Ihre Unternehmensabläufe effizienter und erhalten Sie Ihre Wettbewerbsfähigkeit im Zeitalter von KI."
+content = "Mit unserer benutzerfreundlichen KI-Plattform, genannt Hippo Chat, erhalten Ihre Mitarbeiter einen zentralen Zugang zu Technologie der künstlichen Intelligenz. Erstellen Sie beispielsweise eine Wissensdatenbank für Ihr Unternehmen und lassen Sie die KI passende Berichte und Datenblätter recherchieren. Gestalten Sie Ihre Unternehmensabläufe effizienter und erhalten Sie Ihre Wettbewerbsfähigkeit im Zeitalter von KI."
 image = "/images/WebsiteImages_OnPrem-04.jpg"
 imagePosition = "right"
 [sections.cta]
@@ -29,9 +29,9 @@ url = "#contact"
 
 [[sections]]
 tag = "Wie werden meine Daten geschützt?"
-title = "Maximale Sicherheit durch eigene Infrastruktur"
-content = "Unseren Enterprise-Kunden bieten wir die Möglichkeit, ihre KI-Plattform auf eigenen Servern im Green Data Center der LEW in Deutschland zu hosten. So haben Sie volle Kontrolle über Ihre Daten. Darüber hinaus sichert ein rollenbasierter Zugriff auf die einzelnen Wissensdatenbanken und eine nahtlose Integration in Ihre bestehende IT-Infrastruktur maximale Compliance und Sicherheit."
-image = "/images/WebsiteImages_OnPrem-06.jpg"
+title = "Maximale Sicherheit durch dedizierte Infrastruktur"
+content = "Für unsere Enterprise-Kunden hosten wir unsere KI-Plattform auf dedizierten Servern im Green Data Center der LEW in Deutschland. So haben Sie die volle Kontrolle über Ihre Daten. Darüber hinaus sichert ein rollenbasierter Zugriff auf die einzelnen Wissensdatenbanken und eine nahtlose Integration in Ihre bestehende IT-Infrastruktur maximale Compliance und Sicherheit."
+image = "/images/WebsiteImages_Home-03.jpg"
 imagePosition = "left"
 [sections.cta]
 text = "Erfahren Sie mehr"
@@ -43,7 +43,7 @@ external = true
 [features.content]
 tag = "Welche Funktionen bietet Hippo Chat?"
 title = "Effizienteres Arbeiten mit KI"
-description = "Unsere KI-Plattform unterstützt Ihre Mitarbeiter im Alltag und hilft Ihnen, Ihre Prozesse zu optimieren. Gleichzeitig erhöhen wir die Transparenz und Nachvollziehbarkeit Ihrer KI-Landschaft."
+description = "Unsere KI-Plattform unterstützt Ihre Mitarbeiter im Alltag und hilft Ihnen, Ihre Prozesse zu optimieren. So vermeiden Sie Schatten-KI und erhöhen die Transparenz und Nachvollziehbarkeit Ihrer KI-Landschaft."
 [features.content.cta]
 text = "Vereinbaren Sie einen Demotermin"
 url = "#contact"

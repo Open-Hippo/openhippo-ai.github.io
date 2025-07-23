@@ -55,7 +55,7 @@ quote = "... KI ist einfacher als man denkt ..."
 content = "Lassen Sie sich beim Thema KI nicht von Hype und Angst lenken. Das wichtigste ist die Entscheidung den ersten Schritt zu gehen. Beim Rest helfen wir."
 name = "Dr. Thomas Fraunholz"
 position = "CEO&Founder"
-image = "/images/Profile.png"
+image = "/images/Talker.jpg"
 
 +++
 
