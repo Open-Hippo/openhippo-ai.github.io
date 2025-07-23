@@ -1,0 +1,59 @@
+<!-- Contact Section Component -->
+<div class="cta-primary-wrapper">
+  <div id="contact" class="container-padding-large">
+    <div class="w-layout-grid main-grid-2">
+      <div id="w-node-_6962efe7-c88e-e641-2026-acd4bf59a165-bf59a162" class="walsh-cta-center-wrapper">
+        <div id="w-node-_6962efe7-c88e-e641-2026-acd4bf59a166-bf59a162" class="center-wrapper-gap">
+          <div class="heading-xlarge-white">Kontakt</div>
+          <p class="paragraph-serif-left-hero">
+            {{ if .Params.contact_subtitle }}
+              {{ .Params.contact_subtitle }}
+            {{ else }}
+              Starten Sie noch heute Ihren KI-Weg und vereinbaren einen kostenlosen AI-Readiness Check.
+            {{ end }}
+          </p>
+          
+          <!-- Email Contact -->
+          <a href="{{ site.Data.contact.email.url }}" 
+             class="button-primary-large button-on-primary mail w-inline-block">
+            <div class="button-label-wrapper">
+              <div class="mailus on-primary-container">{{ site.Data.contact.email.text }}</div>
+              <div class="arrow-wrapper">
+                <img loading="lazy" src="{{ "/images/icon-arrow-right-black.svg" | relURL }}" alt="" class="icon-arrow-flip">
+                <img loading="lazy" src="{{ "/images/icon-arrow-right-black.svg" | relURL }}" alt="" class="icon-arrow-flip">
+              </div>
+            </div>
+            <div class="button-hover-fill"></div>
+          </a>
+          
+          <!-- Phone Contact -->
+          <a href="{{ site.Data.contact.phone.url }}" 
+             class="button-primary-large button-on-primary mail w-inline-block">
+            <div class="button-label-wrapper">
+              <div class="mailus on-primary-container">{{ site.Data.contact.phone.text }}</div>
+              <div class="arrow-wrapper">
+                <img loading="lazy" src="{{ "/images/icon-arrow-right-black.svg" | relURL }}" alt="" class="icon-arrow-flip">
+                <img loading="lazy" src="{{ "/images/icon-arrow-right-black.svg" | relURL }}" alt="" class="icon-arrow-flip">
+              </div>
+            </div>
+            <div class="button-hover-fill"></div>
+          </a>
+          
+          <!-- Calendar Contact -->
+          <a href="{{ site.Data.contact.calendar.url }}" 
+             target="_blank" 
+             class="button-primary-large button-on-primary mail w-inline-block">
+            <div class="button-label-wrapper">
+              <div class="mailus on-primary-container">{{ site.Data.contact.calendar.text }}</div>
+              <div class="arrow-wrapper">
+                <img loading="lazy" src="{{ "/images/icon-arrow-right-black.svg" | relURL }}" alt="" class="icon-arrow-flip">
+                <img loading="lazy" src="{{ "/images/icon-arrow-right-black.svg" | relURL }}" alt="" class="icon-arrow-flip">
+              </div>
+            </div>
+            <div class="button-hover-fill"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

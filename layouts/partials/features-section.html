@@ -1,0 +1,40 @@
+<section class="features-list">
+  <div class="container-rounded">
+    <div class="rounded-box-banner">
+      <div class="features-wrapper-two">
+        {{ if or .content.tag .content.title .content.description .content.cta }}
+        <div class="inner-rounded-banner">
+          {{ with .content.tag }}
+          <div class="title-tag">{{ . }}</div>
+          {{ end }}
+          
+          {{ with .content.title }}
+          <h3 class="heading-large">{{ . }}</h3>
+          {{ end }}
+          
+          {{ with .content.description }}
+          <p class="main-paragraph">{{ . | markdownify }}</p>
+          {{ end }}
+          
+          {{ with .content.cta }}
+          <a href="{{ .url }}" {{ if .external }}target="_blank"{{ end }} class="link-block w-inline-block">
+            <div class="button-primary">{{ .text }}</div>
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        {{ if .features }}
+        <ul role="list" class="inner-rounded-banner w-list-unstyled">
+          {{ range .features }}
+          <li class="features-block-two">
+            <img src="{{ .image }}" loading="lazy" alt="{{ .imageAlt | default .description }}" class="features-image">
+            <p class="main-paragraph">{{ .description }}</p>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

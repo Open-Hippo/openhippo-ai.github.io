@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="walsh-container-2 w-container" style="margin: 0 auto;">
+    <div class="w-layout-grid main-grid-no-gap" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+      <div class="walsh-cta-inner-image" style="flex: 0 0 40%;">
+        <img src="{{ .image }}" loading="lazy" width="378" alt="{{ .name }}">
+      </div>
+      <div class="cta-h-wrapper" style="flex: 0 0 55%;">
+        <img src="/images/noun_Quote_89670.svg" loading="lazy" alt="" class="quote-image">
+        <h3 class="heading-medium">{{ .quote }}</h3>
+        <p class="main-paragraph">{{ .content }}</p>
+        <div class="info-wrap">
+          <div class="heading-small">{{ .name }}</div>
+          <div class="text-small">{{ .position }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

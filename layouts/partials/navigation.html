@@ -1,0 +1,56 @@
+<!-- Navigation Component -->
+<div class="nav-wrapper-padding">
+  <div class="float-menu">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="main-nav w-nav">
+      <div class="inner-container-nav-float w-container">
+        <div class="inner-nav">
+          <!-- Logo -->
+          <a href="{{ "/" | relURL }}" class="brand-block w-nav-brand{{ if .IsHome }} w--current{{ end }}">
+            <img class="nav-logo" 
+                 src="{{ "/images/Logo-OpenHippo-f-rgb.png" | relURL }}" 
+                 width="Auto" 
+                 alt="Open Hippo Logo" 
+                 sizes="(max-width: 767px) 98vw, (max-width: 991px) 728px, 940px" 
+                 loading="lazy" 
+                 srcset="{{ "/images/Logo-OpenHippo-f-rgb-p-500.png" | relURL }} 500w, 
+                         {{ "/images/Logo-OpenHippo-f-rgb-p-800.png" | relURL }} 800w, 
+                         {{ "/images/Logo-OpenHippo-f-rgb-p-1080.png" | relURL }} 1080w, 
+                         {{ "/images/Logo-OpenHippo-f-rgb-p-1600.png" | relURL }} 1600w, 
+                         {{ "/images/Logo-OpenHippo-f-rgb-p-2000.png" | relURL }} 2000w, 
+                         {{ "/images/Logo-OpenHippo-f-rgb-p-2600.png" | relURL }} 2600w, 
+                         {{ "/images/Logo-OpenHippo-f-rgb.png" | relURL }} 2882w">
+          </a>
+          
+          <!-- Navigation Menu -->
+          <nav role="navigation" class="nav-menu-white w-nav-menu">
+            {{- range site.Menus.main }}
+            <a href="{{ .URL | relURL }}" 
+               class="nav-link-black w-nav-link{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} w--current{{ end }}">
+              {{ .Name }}
+            </a>
+            {{- end }}
+            
+            <!-- CTA Button -->
+            <div class="flex-nav-buttons">
+              <a href="https://console.openhippo.io/" class="button-primary-large w-inline-block">
+                <div class="button-label-wrapper">
+                  <div class="label-button">Try the API</div>
+                  <div class="arrow-wrapper">
+                    <img src="{{ "/images/icon-arrow-right-white.svg" | relURL }}" loading="lazy" alt="" class="icon-arrow-flip">
+                    <img src="{{ "/images/icon-arrow-right-white.svg" | relURL }}" loading="lazy" alt="" class="icon-arrow-flip">
+                  </div>
+                </div>
+                <div class="button-hover-fill"></div>
+              </a>
+            </div>
+          </nav>
+          
+          <!-- Mobile Menu Button -->
+          <div class="menu-button-black w-nav-button">
+            <div class="w-icon-nav-menu"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
