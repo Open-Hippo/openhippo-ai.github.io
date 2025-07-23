@@ -3,6 +3,7 @@ title: "Legal Notice"
 description: "The Legal Notice of Open Hippo GmbH."
 type: "legal"
 layout: "single"
+toc: false
 ---
 
 Information according to § 5 German Telemedia Act (TMG)

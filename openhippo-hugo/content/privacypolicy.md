@@ -1,11 +1,9 @@
 ---
 title: "Privacy Policy"
 description: "The Privacy Policy of Open Hippo GmbH."
+title: "Legal Notice"
 type: "legal"
-layout: "single"
 ---
-
-**Privacy Policy**
 
 **Privacy Policy**
 
@@ -67,7 +65,7 @@ Stripe is a U.S.-based company, and we ensure that only necessary transactional 
 
 ## 5. What external services do we use?
 
-### 5.1. Calendly
+### 5.1 Calendly
 For convenience we offer you the option to book a meeting with us. The booking page is provided by Calendly LLC, 271 17th St. NW, Ste 1000, Atlanta, Georgia, United States of America. The booking page is not part of our website and is only accessible via an external link. The use of this service is entirely voluntary. Thus the consent for usage is managed directly by Calendly. When you give your consent, personal data related to the meeting, such as your name and preferred meeting time, is shared with Calendly.
 
 It's important to note that by using Calendly's service, you are subject to their privacy policy and terms of service. We recommend reviewing these before proceeding with a booking. For further information on Calendly's data protection practices, please visit https://calendly.com/legal.
@@ -109,9 +107,6 @@ Under data protection law, you as a user have the following rights regarding you
 
 You have the right to withdraw your consent at any time, where we rely on consent as a legal basis for processing. This withdrawal will not affect the lawfulness of processing based on consent before its withdrawal. In addition, in accordance with data protection law, you also have the right to data disclosure and data destruction. If you wish to exercise your rights, you can inform us informally by email at privacy@openhippo.ai, or by mail to our postal address:
 
-Open Hippo GmbH
-Garmischer Allee 15
-86438 Kissing
-Germany
+Open Hippo GmbH, Garmischer Allee 15, 86438 Kissing, Germany
 
 You also have the right to lodge a complaint with a data protection supervisory authority about our processing of your personal data.
