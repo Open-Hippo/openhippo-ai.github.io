@@ -32,7 +32,7 @@ external = true
 tag = "Was unterscheidet Open Hippo von anderen Anbietern?"
 title = "Wir starten dort, wo andere aufhören."
 content = "Unsere Server im Green Data Center der LEW in Deutschland garantieren Ihnen nicht nur höchste Qualität und Sicherheit, sondern auch echte DSGVO-Konformität. Dies unterscheidet uns von Wettbewerbern, welche in der Regel auf Infrastruktur von US-Cloud Providern und für die Sicherheit Ihrer Daten und sind CO2-neutral im regulären Betrieb. So bieten wir Ihnen nicht nur leistungsstarke, sondern auch umweltfreundliche Hosting-Lösungen von energieintensiven KI-Technologien."
-image = "/images/LEW-Logo.png"
+image = "/images/GDC_2.jpg"
 imagePosition = "left"
 [sections.cta]
 text = "Erfahren Sie mehr"

@@ -48,8 +48,8 @@ When you contact us in writing by mail or email we process your personal data on
 
 ## 4. Who do we forward your Personal Data to?
 
-### 4.1 Digital Ocean
-We host this website with our cloud provider DigitalOcean, LLC, 101 Avenue of the Americas, FL 10, New York, NY, 10013-1905, United States of America.The personal data collected using the website is stored on the servers of Digital Ocean. The server is located in Germany. Digital Ocean assures that the data remains in the selected region and will inform us if this changes. To ensure data protection-compliant processing, we have concluded a data processing agreement with Digital Ocean. The agreement can be accessed at https://www.digitalocean.com/legal/data-processing-agreement.
+### 4.1 GitHub Pages
+We host this website using GitHub Pages, a static site hosting service provided by GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States of America. The personal data collected using the website is processed through GitHub's infrastructure. GitHub Pages hosts static websites and does not process dynamic content or store user-submitted data beyond standard web server logs. To ensure data protection-compliant processing, GitHub has implemented appropriate safeguards including Standard Contractual Clauses for international data transfers. For more information about GitHub's data protection practices, please visit their privacy statement at https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement.
 
 ### 4.2 Google
 We have a legitimate interest in maintaining professional email communication with you as our customer and in conducting video conferences efficiently. To achieve this, we use Google Workspace, a product provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Google Workspace includes services such as Gmail for business email, Google Meet for video conferencing, and other collaboration tools. When you communicate with us via email or participate in a video conference, your personal data (such as your email address, name, and potentially your image and voice during video calls) may be processed through these services.
@@ -62,6 +62,15 @@ Please note that Google is a US-based company, and data may be transferred to an
 To ensure efficient and secure payment processing, we use a service provided by Stripe Payments Europe, Limited (SPEL), located at 1 Grand Canal Street Lower, Grand Canal Dock, Dublin, D02 H210, Ireland. The payment page and the manage subsciption page is not part of our website and is hosted by Stripe. It is accessible via an external link. By choosing to subscribe to our services and providing your payment details, you consent to the terms and conditions set forth by Stripe. When you provide your payment details, such as your credit card number, expiration date, and billing address, this information is securely transmitted to Stripe for processing. It's important to note that by using Stripe's services, you are subject to their privacy policy and terms of service, which we recommend reviewing before proceeding with a transaction. For further information on Stripe's data protection practices, please visit Stripe's privacy policy page.
 
 Stripe is a U.S.-based company, and we ensure that only necessary transactional information, such as the details of the services used (e.g., Hippo Token credits) and the timestamp of the transaction, is shared with Stripe. No additional information related to the processing or usage of our services is disclosed. If you have any concerns or prefer alternative arrangements, please contact us directly at privacy@openhippo.ai.
+
+### 4.4 Supabase
+We use Supabase, a backend-as-a-service platform provided by Supabase Inc., to power our API services including user authentication, profile management, and API key storage. Supabase provides the infrastructure for our database, authentication system, and API services that enable core functionality of our API services.
+
+When you create an account, log in, or use our services, your personal data such as email address, profile information, authentication tokens, and API keys are processed and stored through Supabase's infrastructure. We have configured our Supabase instance to use European servers exclusively, ensuring that your data remains within the EU jurisdiction and is subject to European data protection standards.
+
+We process this data on the basis of our legitimate interest to provide secure and reliable services, as well as to fulfill our contractual obligations when you use our API services. Supabase acts as a data processor on our behalf and processes your personal data solely in accordance with our instructions and the terms of our data processing agreement.
+
+Supabase has implemented appropriate technical and organizational measures to ensure the security of your personal data, including encryption at rest and in transit, regular security audits, and compliance with industry standards. For more information about Supabase's data protection practices and security measures, please visit their privacy policy at https://supabase.com/privacy.
 
 ## 5. What external services do we use?
 
