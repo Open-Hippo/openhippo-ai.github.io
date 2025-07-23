@@ -5,7 +5,7 @@ draft = false
 type = "homepage"
 
 # SEO
-description = "Open Hippo – Ihre sichere, DSGVO‑ & EU‑AI‑gesetz‑konforme KI‑Plattform aus Deutschland: Hosted und On‑Prem LLMs, Wissensmanagement, Dokumentenerkennung & Experten‑Training."
+description = "Open Hippo – DSGVO‑ & EU‑AI‑gesetz‑konforme KI‑Lösungen aus Deutschland: Hosted und On‑Prem LLMs, Wissensmanagement, Dokumentenerkennung und Beratung."
 
 # Hero Section
 [hero]

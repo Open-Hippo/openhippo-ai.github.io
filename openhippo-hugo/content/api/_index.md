@@ -54,7 +54,7 @@ image = "/images/qwen3.jpg"
 description = "Unsere Qwen3-Modelle eignen sich perfekt zur Entwicklung von KI-Agenten."
 
 [[features.features]]
-image = "/images/WebsiteImages_Development-15.jpg"
+image = "/images/OpenAI-black-monoblossom.svg"
 description = "Unsere API ist vollständig OpenAI-kompatibel, damit der Umstieg ein Kinderspiel ist."
 
 [[features.features]]
@@ -63,8 +63,8 @@ description = "Echte DSGVO-Konformität durch eigene Infrastruktur im LEW Green 
 
 # Testimonial Section
 [testimonial]
-quote = "... Complience und Nachhaltigkeit ..."
-content = "Hippo Token ist eine DSGVO-konforme Alternative für Ihre Daten. Ideal für Unternehmen, die Wert auf digitale Souveränität und Nachhaltigkeit legen."
+quote = "... digitale Souveränität und Nachhaltigkeit ..."
+content = "Hippo Token ist eine DSGVO-konforme KI-Alternative - ideal für Unternehmen, die Wert auf digitale Souveränität und Nachhaltigkeit legen."
 name = "Dr. Thomas Fraunholz"
 position = "CEO&Founder"
 image = "/images/Profile.png"

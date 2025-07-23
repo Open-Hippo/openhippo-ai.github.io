@@ -61,8 +61,8 @@ description = "Optimale Auslegung vom einzelnen Server bis zum georedundanten Sy
 
 # Testimonial Section
 [testimonial]
-quote = "... behalten Sie die volle Kontrolle über Ihre Daten ..."
-content = "Mit Hippo Server behalten Sie die volle Kontrolle über Ihre Daten und erfüllen alle Compliance-Anforderungen. Unsere On-Premise-KI-Plattform bietet maximale Sicherheit und gewährleistet, dass Ihre sensiblen Informationen sicher und souverän bleiben."
+quote = "... digitale Souveränität ..."
+content = "Mit unseren On-Prem Lösungen definieren wir digitale Souveränität im Zeitalter von KI neu."
 name = "Dr. Thomas Fraunholz"
 position = "CEO&Founder"
 image = "/images/Profile.png"

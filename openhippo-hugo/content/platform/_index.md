@@ -63,7 +63,7 @@ description = "Unternehmenseigene Wissensdatenbanken und KI-Suche – schneller,
 # Testimonial Section
 [testimonial]
 quote = "... volle Kontrolle ..."
-content = "Die Open Hippo KI-Plattform vereint Complience und Nachhaltigkeit. Unsere Lösung bietet Ihnen volle Kontrolle über Ihre Daten, effizientes Wissensmanagement und nahtlose Integration in Ihre bestehenden Workflows."
+content = "Mit Hippo Chat behalten Sie die volle Kontrolle über Ihre Daten und erhalten effizientes Wissensmanagement und nahtlose Integration in Ihre bestehende IT-Infrastruktur."
 name = "Dr. Thomas Fraunholz"
 position = "CEO&Founder"
 image = "/images/Profile.png"

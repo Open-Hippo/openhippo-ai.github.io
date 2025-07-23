@@ -4,9 +4,9 @@ title = 'Open Hippo - Wir bauen KI.'
 
 # Site configuration
 [params]
-  description = "Open Hippo – Ihre sichere, DSGVO‑ & EU‑AI‑gesetz‑konforme KI‑Plattform aus Deutschland"
+  description = "Open Hippo – DSGVO‑ und EU-KI-Gesetz‑konforme KI‑Lösungen aus Deutschland"
   author = "Open Hippo"
-  keywords = ["KI", "Künstliche Intelligenz", "DSGVO", "Deutschland", "AI Platform"]
+  keywords = ["KI", "Künstliche Intelligenz", "DSGVO", "Deutschland", "API"]
   
 # SEO and social media
 [params.social]
