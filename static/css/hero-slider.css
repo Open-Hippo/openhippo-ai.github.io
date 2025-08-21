@@ -1,0 +1,521 @@
+/* Hero Slider Styles */
+
+/* Professional navbar overlay solution */
+.nav-wrapper-padding {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: transparent;
+}
+
+.hero-slider-container {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  min-height: 700px; /* Increased for large screens to prevent text going under menu */
+  max-height: none; /* Remove max-height to allow growth on very large screens */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add specific styling for very large screens */
+@media screen and (min-width: 1400px) {
+  .hero-slider-container {
+    min-height: 800px; /* Even more space for extra large screens */
+  }
+}
+
+/* Remove any potential spacing on homepage */
+body main {
+  margin: 0;
+  padding: 0;
+}
+
+/* Specifically target homepage hero positioning */
+body .hero-slider-container:first-child {
+  margin-top: 0 !important;
+}
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+/* Media Container */
+.hero-media-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Background Media */
+.hero-video,
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-video {
+  background-color: #000;
+}
+
+.hero-fallback-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay - Removed grey tone */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Content - Nike style positioning */
+.hero-content {
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+  color: white;
+  text-align: left;
+  max-width: 600px;
+  z-index: 5;
+  
+  /* Add semi-transparent blue-grey background for better contrast */
+  background: rgba(45, 71, 109, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.hero-content-inner {
+  width: 100%;
+}.hero-text-content {
+    margin-bottom: 30px;
+  }
+  
+  /* No margin on mobile to eliminate gap */
+  @media screen and (max-width: 767px) {
+  .hero-slider-container {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .hero-slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+    .hero-text-content {
+      margin-bottom: 20px;
+    }
+  }
+
+.hero-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  opacity: 0.9;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+  display: block;
+  visibility: visible;
+}
+
+.hero-description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  opacity: 0.95;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.hero-btn-primary {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.hero-btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.hero-btn-secondary {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.hero-btn-secondary:hover {
+  background-color: white;
+  color: var(--walsh--black);
+}
+
+.hero-btn-arrow {
+  transition: transform 0.3s ease;
+}
+
+.hero-btn:hover .hero-btn-arrow {
+  transform: translateX(4px);
+}
+
+/* Navigation Dots */
+.hero-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 4;
+}
+
+.hero-dot {
+  width: 12px;
+  height: 12px;
+  min-width: 12px;
+  min-height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 0;
+}
+
+.hero-dot.active,
+.hero-dot:hover {
+  background-color: white;
+  border-color: white;
+}
+
+.hero-dot:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* Navigation Arrows - Nike style bottom right */
+.hero-nav {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  display: flex;
+  gap: 16px;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.hero-nav-btn {
+  pointer-events: all;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.hero-nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: white;
+}
+
+.hero-nav-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Progress Circle */
+.hero-progress-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+  transition: stroke-dashoffset 0.1s linear;
+}
+
+.progress-ring-background {
+  opacity: 0.3;
+}
+
+.progress-ring-progress {
+  transition: stroke-dashoffset 6s linear;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 991px) {
+  .hero-slider-container {
+    height: 75vh;
+    min-height: 500px; /* Increased for tablet spacing */
+    max-height: 600px;
+  }
+  
+  .hero-content {
+    left: 30px;
+    bottom: 60px;
+    max-width: 600px; /* Set consistent max-width like desktop */
+    padding: 30px;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
+  }
+  
+  .hero-description {
+    font-size: 18px;
+  }
+  
+  .hero-nav {
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .hero-progress-circle {
+    display: none;
+  }
+}@media screen and (max-width: 767px) {
+  .hero-slider-container {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+    overflow: visible; /* Allow content to flow naturally */
+    position: relative;
+  }
+  
+  .hero-slider {
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+  
+  .hero-slide {
+    position: relative;
+    height: 85vh; /* Leave 15vh space to encourage scrolling */
+    min-height: 550px; /* Increased to ensure buttons have space */
+    max-height: 85vh;
+    display: none; /* Hide all slides by default on mobile */
+  }
+  
+  .hero-slide.active {
+    display: block; /* Only show active slide on mobile */
+    opacity: 1;
+  }
+  
+  /* Make media container relative for mobile */
+  .hero-media-container {
+    position: relative;
+    width: 100%;
+    height: 45vh; /* Slightly reduce media height */
+    min-height: 300px; /* Increased to ensure dots have proper space */
+    max-height: 45vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero-video,
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }/* Content flows directly after media */
+  .hero-content {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    background: #2d476d; /* Blue-grey background on mobile */
+    border-radius: 0;
+    margin: 0;
+    margin-top: -2px; /* Small negative margin to ensure no gap */
+    min-height: 250px; /* Fixed minimum height for buttons */
+    height: 40vh;
+    display: flex;
+    align-items: flex-start; /* Align content to top of content area */
+    backdrop-filter: none; /* Remove blur on mobile for performance */
+    -webkit-backdrop-filter: none;
+  }
+  
+  .hero-content-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start content from top */
+  }
+  
+  .hero-title {
+    font-size: 32px;
+    margin: 0 0 16px 0; /* Reduce bottom margin on mobile */
+  }
+  
+  .hero-subtitle {
+    font-size: 14px;
+    margin: 0 0 12px 0; /* Reduce bottom margin on mobile */
+  }
+  
+  .hero-description {
+    font-size: 16px;
+    margin: 0 0 16px 0; /* Consistent margin on mobile */
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .hero-btn {
+    padding: 12px 24px;
+  }
+  .hero-nav {
+    display: none; /* Hide navigation arrows on mobile */
+  }
+  
+  .hero-nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .hero-nav-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .hero-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    gap: 8px;
+  }
+  
+  .hero-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .hero-progress-circle {
+    display: none;
+  }
+
+  .progress-ring {
+    width: 32px;
+    height: 32px;
+  }
+}

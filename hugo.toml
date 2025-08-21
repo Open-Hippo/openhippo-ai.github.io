@@ -20,21 +20,55 @@ title = 'Open Hippo - Wir bauen KI.'
 # Navigation menu
 [menu]
   [[menu.main]]
-    name = "Hippo Token"
-    url = "/api/"
+    name = "Produkte"
+    identifier = "produkte"
     weight = 10
+    
+  [[menu.main]]
+    name = "Hippo Token"
+    url = "/produkte/token/"
+    parent = "produkte"
+    weight = 11
+    
   [[menu.main]]
     name = "Hippo Chat"
-    url = "/platform/"
+    url = "/produkte/chat/"
+    parent = "produkte"
+    weight = 12
+    
+  [[menu.main]]
+    name = "Dienste"
+    identifier = "dienste"
     weight = 20
+    
   [[menu.main]]
-    name = "Hippo On-Prem"
-    url = "/server/"
+    name = "Beratung"
+    url = "/dienste/beratung/"
+    parent = "dienste"
+    weight = 21
+    
+  [[menu.main]]
+    name = "On-Prem"
+    url = "/dienste/onprem/"
+    parent = "dienste"
+    weight = 22
+    
+  [[menu.main]]
+    name = "Beispiele"
+    identifier = "beispiele"
     weight = 30
+    
   [[menu.main]]
-    name = "Hippo Consulting"
-    url = "/consulting/"
-    weight = 40
+    name = "Schatten-KI"
+    url = "/beispiele/schatten-ki/"
+    parent = "beispiele"
+    weight = 32
+    
+  [[menu.main]]
+    name = "KI-Souveränität"
+    url = "/beispiele/ki-souveraenitaet/"
+    parent = "beispiele"
+    weight = 31
 
 # Markup configuration
 [markup]

@@ -9,18 +9,34 @@ description = "Open Hippo – DSGVO‑ & EU‑AI‑gesetz‑konforme KI‑Lösun
 
 # Hero Section
 [hero]
-title = "Wir bauen"
-title_highlight = "KI."
-subtitle = "Digitale Souveränität. Aus der Region. Für die Region."
-cta_text = "Starten Sie jetzt Ihre KI-Zukunft"
-cta_url = "#contact"
-background_image = "/images/Logo-whiteCircle.png"
+  [[hero.slides]]
+  title = "Wir bauen <span style='color: var(--primary);'>KI</span>."
+  subtitle = "Digitale Souveränität"
+  description = "Vertreiben Sie die Schatten-KI aus Ihrem Unternehmen."
+  background_image = "/images/slider-shadow.jpg"
+  alt_text = "Open Hippo Data Center"
+  [hero.slides.primary_button]
+  text = "Starten Sie jetzt"
+  url = "#contact"
+  [hero.slides.secondary_button]
+  text = "Mehr erfahren"
+  url = "/beispiele/schatten-ki/"
+
+  [[hero.slides]]
+  title = "<span style='color: var(--primary);'>Partner</span> des LEW Green Data Centers."
+  subtitle = "Nachhaltige KI-Lösungen"
+  description = "KI aus Wasserkraft und Photovoltaik."
+  background_image = "/images/slider-datacenter.jpg"
+  alt_text = "Green Data Center"
+  [hero.slides.primary_button]
+  text = "Besuchen Sie uns"
+  url = "#contact"
 
 # Page Sections
 [[sections]]
 tag = "Was bietet Open Hippo an?"
 title = "KI aus Deutschland - sicher und einfach zu integrieren."
-content = "Unser Open Source KI-Ökosystem erlaubt fortschrittliches Wissensmanagement und präzise Dokumentenerkennung basierend auf der Technologie großer Sprachmodelle (LLMs). Unsere LLMs führen zuverlässig Tool Calls aus, was sie ideal für den Einsatz als KI-Agenten macht. Wir unterstützen Sie dabei, Ihre Geschäftsprozesse mit KI effizienter zu gestalten und kümmern uns um alle regulatorischen KI-Vorgaben, einschließlich des EU-KI-Gesetzes. Mit unseren innovativen KI-Lösungen machen Sie Ihr Unternehmen fit für die KI-Zukunft und bleiben wettbewerbsfähig in einer sich ständig weiterentwickelnden digitalen Landschaft."
+content = "Open Hippo macht KI für Ihr Unternehmen greifbar: Wir hosten OpenAI-kompatible Modelle – perfekt für die Entwicklung intelligenter KI-Agenten. </br></br> Von der Beratung zur KI-Integration über Wissensmanagement bis zur Automatisierung Ihrer Prozesse: Wir begleiten Sie. Dabei sorgen wir für lückenlose Compliance – ob DSGVO oder EU-KI-Gesetz. </br></br> Warum warten? Starten Sie jetzt durch und lassen Sie Ihre Konkurrenz im KI-Zeitalter zurück!"
 image = "/images/Hippo_Services.jpg"
 imagePosition = "right"
 [sections.cta]
@@ -30,7 +46,7 @@ url = "#contact"
 [[sections]]
 tag = "Was unterscheidet Open Hippo von anderen Anbietern?"
 title = "Echte DSGVO-Konformität durch eigene Infrastruktur."
-content = "Im Zeitalter der künstlichen Intelligenz sind Ihre Daten Ihr wertvollstes Gut. Die KI-Plattform von Open Hippo ist vollständig konform mit der DSGVO und dem EU-KI-Gesetz. Im Gegensatz zu unseren Wettbewerbern betreiben wir hierfür eigene Hardware und sind unabhängig von US-Cloud-Providern. Mit unseren Lösungen vermeiden Sie außerdem Vendor-Lock-In. Als einziger Anbieter in Deutschland stellen wir Ihnen unsere KI-Plattform als KI-Server On-Prem bei Ihnen vor Ort zur Verfügung. Wir konfigurieren dabei Ihren KI-Server nach Ihren Bedürfnissen - von einer einzelnen Maschine bis hin zu einem georedundanten Setup."
+content = "Im Zeitalter der künstlichen Intelligenz sind Ihre Daten Ihr wertvollstes Gut. Unsere Lösungen sind vollständig konform mit der DSGVO und dem EU-KI-Gesetz. Im Gegensatz zu unseren Wettbewerbern betreiben wir hierfür eigene Hardware und sind unabhängig von US-Cloud-Providern. Ihre Daten sind somit vor externen Zugriffen geschützt. Für besonders sensitive Daten stellen wir Ihnen KI-Server vor Ort zur Verfügung. Wir skalieren Ihre KI-Infrastruktr von einer einfachen lokalen Lösung bis hin zu einem georedundanten Setup."
 image = "/images/WebsiteImages_Development-10.jpg"
 imagePosition = "right"
 [sections.cta]
@@ -58,7 +74,3 @@ position = "CEO&Founder"
 image = "/images/Talker.jpg"
 
 +++
-
-# Homepage Content
-
-Willkommen bei Open Hippo - dem KI-Dienstleister aus Deutschland, der Sicherheit, DSGVO-Konformität und Innovation priorisiert.

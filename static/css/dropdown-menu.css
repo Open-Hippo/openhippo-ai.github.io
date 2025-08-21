@@ -1,0 +1,227 @@
+/* Dropdown Menu Styles */
+
+/* Dropdown container */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Main dropdown link styling - inherits from nav-link-black */
+.nav-link-dropdown {
+  color: var(--walsh--black);
+  border-radius: 8px;
+  padding: 15px 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Make dropdown link consistent with nav-link-black */
+.nav-link-dropdown.w-nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Dropdown arrow */
+.dropdown-arrow {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+/* Rotate arrow when dropdown is open */
+.nav-dropdown.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Hover state for dropdown link - match nav-link-black hover */
+.nav-link-dropdown:hover {
+  background-color: var(--surface);
+  color: var(--on-tertiary-container);
+}
+
+/* Active/current state for dropdown */
+.nav-link-dropdown.w--current {
+  color: #6d6d6d;
+  background-color: #dbdbdb59;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.12);
+  min-width: 220px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  margin-top: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 8px;
+}
+
+/* Show dropdown */
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown items */
+.dropdown-item {
+  display: block;
+  padding: 10px 16px;
+  color: var(--walsh--black);
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  border-radius: 8px;
+  margin: 2px 0;
+}
+
+.dropdown-item:first-child {
+  margin-top: 0;
+}
+
+.dropdown-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Match hover state with main nav buttons */
+.dropdown-item:hover {
+  background-color: var(--surface);
+  color: var(--on-tertiary-container);
+}
+
+/* Mobile styles */
+@media screen and (max-width: 991px) {
+  .nav-dropdown {
+    width: 100%;
+    display: block;
+  }
+  
+  .nav-link-dropdown {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    justify-content: space-between;
+  }
+  
+  .nav-link-dropdown:hover {
+    background-color: transparent;
+  }
+  
+  /* Remove dropdown arrow rotation on mobile for better UX */
+  .dropdown-arrow {
+    transition: transform 0.2s ease;
+  }
+  
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    background-color: transparent;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+    border: none;
+    border-radius: 0;
+  }
+  
+  .nav-dropdown.open .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-item {
+    padding: 10px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: transparent;
+    transition: all 0.2s ease;
+  }
+  
+  .dropdown-item:first-child {
+    margin-top: 5px;
+  }
+  
+  .dropdown-item:last-child {
+    margin-bottom: 15px;
+  }
+  
+  /* Hover effect for desktop users with small windows */
+  @media (hover: hover) {
+    .dropdown-item:hover {
+      background-color: var(--surface);
+      color: var(--on-tertiary-container);
+    }
+  }
+  
+  /* Active state for touch devices */
+  .dropdown-item:active {
+    background-color: var(--surface);
+    color: var(--on-tertiary-container);
+  }
+}
+
+/* Animation for mobile menu */
+@media screen and (max-width: 991px) {
+  .dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    display: block !important;
+  }
+  
+  .nav-dropdown.open .dropdown-menu {
+    max-height: 300px;
+  }
+}
+
+/* Style the mobile navigation menu container */
+@media screen and (max-width: 991px) {
+  .nav-menu-white.w-nav-menu {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  /* Ensure the nav menu has proper spacing from the top */
+  .w-nav-overlay {
+    top: 70px;
+  }
+}

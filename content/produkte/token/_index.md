@@ -6,15 +6,15 @@ type = "service"
 layout = "default"
 
 # SEO
-description = "Hippo Beratung - Wir begleiten Sie auf Ihren Weg in Ihre KI-Zukunft und schulen Ihre Mitarbeiter im Umgang mit KI gemäß dem EU-KI-Gesetz."
+description = "Große Sprachmodelle made in Germany: Nutzen Sie unsere DSGVO-konforme, OpenAI-kompatible API mit Qwen3-Modellen – sicher, CO₂-neutral im LEW Green Data Center und perfekt für KI-Agenten, Automatisierung und digitale Souveränität."
 
 # Hero Section
 [hero]
-title = "Large Language Models"
-title_highlight = "hosted in Germany"
-subtitle = "Die einzige wirklich DSGVO-konforme Alternative!"
-cta_text = "Kontakt"
-cta_url = "#contact"
+title = "Große Sprachmodelle"
+title_highlight = "mit der Kraft des Lechs."
+subtitle = "Nutzen Sie unsere Open Source Sprachmodelle mit maximalen Datenschutz!"
+cta_text = "Probieren Sie es aus!"
+cta_url = "https://console.openhippo.io"
 
 # Main Content Sections
 [[sections]]
@@ -66,6 +66,6 @@ description = "Echte DSGVO-Konformität durch eigene Infrastruktur im LEW Green 
 quote = "... digitale Souveränität und Nachhaltigkeit ..."
 content = "Hippo Token ist eine DSGVO-konforme KI-Alternative - ideal für Unternehmen, die Wert auf digitale Souveränität und Nachhaltigkeit legen."
 name = "Dr. Thomas Fraunholz"
-position = "CEO&Founder"
+position = "CEO & Founder"
 image = "/images/Profile.png"
 +++

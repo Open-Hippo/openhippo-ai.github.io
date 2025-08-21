@@ -6,21 +6,21 @@ type = "service"
 layout = "default"
 
 # SEO
-description = "Hippo Beratung - Wir begleiten Sie auf Ihren Weg in Ihre KI-Zukunft und schulen Ihre Mitarbeiter im Umgang mit KI gemäß dem EU-KI-Gesetz."
+description = "Ihre sichere KI-Anlaufstelle für Mitarbeiter: Mit Hippo Chat vereinen Sie Wissensmanagement, DSGVO-konforme Datenkontrolle und smarte KI-Assistenten – für effizientere Arbeitsabläufe und maximale Datensicherheit, ganz ohne Schatten-KI."
 
 # Hero Section
 [hero]
-title = "Die KI-PLattform"
-title_highlight = "aus Deutschland"
-subtitle = "Die wirklich DSGVO-konforme Alternative!"
+title = "Die KI-Anlaufstelle"
+title_highlight = "für Ihre Mitarbeiter."
+subtitle = "Vereinigen Sie mit Hippo Chat KI und Compliance - damit Ihre Daten nicht in falsche Hände gelangen."
 cta_text = "Lassen Sie sich beraten"
 cta_url = "#contact"
 
 # Main Content Sections
 [[sections]]
 tag = "Was ist Hippo Chat?"
-title = "Hippo Chat: Machen Sie Ihr Unternehmen wettbewerbsfähig mit KI"
-content = "Mit unserer benutzerfreundlichen KI-Plattform, genannt Hippo Chat, erhalten Ihre Mitarbeiter einen zentralen Zugang zu Technologie der künstlichen Intelligenz. Erstellen Sie beispielsweise eine Wissensdatenbank für Ihr Unternehmen und lassen Sie die KI passende Berichte und Datenblätter recherchieren. Gestalten Sie Ihre Unternehmensabläufe effizienter und erhalten Sie Ihre Wettbewerbsfähigkeit im Zeitalter von KI."
+title = "Die zentrale KI für Ihr Unternehmen."
+content = "Mit unserer benutzerfreundlichen KI-Plattform, genannt Hippo Chat, erhalten Ihre Mitarbeiter einen zentralen Zugang zur Technologie der künstlichen Intelligenz. Erstellen Sie beispielsweise eine Wissensdatenbank für Ihr Unternehmen und lassen Sie die KI passende Berichte und Datenblätter recherchieren. Gestalten Sie Ihre Unternehmensabläufe effizienter und erhalten Sie Ihre Wettbewerbsfähigkeit im Zeitalter von KI."
 image = "/images/WebsiteImages_OnPrem-04.jpg"
 imagePosition = "right"
 [sections.cta]
@@ -28,13 +28,13 @@ text = "Kontaktieren Sie uns"
 url = "#contact"
 
 [[sections]]
-tag = "Wie werden meine Daten geschützt?"
-title = "Maximale Sicherheit durch dedizierte Infrastruktur"
-content = "Für unsere Enterprise-Kunden hosten wir unsere KI-Plattform auf dedizierten Servern im Green Data Center der LEW in Deutschland. So haben Sie die volle Kontrolle über Ihre Daten. Darüber hinaus sichert ein rollenbasierter Zugriff auf die einzelnen Wissensdatenbanken und eine nahtlose Integration in Ihre bestehende IT-Infrastruktur maximale Compliance und Sicherheit."
+tag = "Wie werden meine Unternehmensdaten geschützt?"
+title = "Behalten Sie die Kontrolle über Ihre Daten."
+content = "Mit Hilfe unserer KI-Plattform behalten Sie die volle Kontrolle über Ihre Daten. Durch einen rollenbasierten Zugriff auf die einzelnen Wissensdatenbanken und eine nahtlose Integration in Ihre bestehende IT-Infrastruktur erhalten Sie maximale Compliance und Sicherheit. Wir hosten unsere Lösungen auf unseren Servern im LEW Green Data Center in Deutschland oder On-Premise bei Ihnen. So können Sie sicher sein, dass Ihre Daten sicher und datenschutzkonform verarbeitet werden."
 image = "/images/WebsiteImages_Home-03.jpg"
 imagePosition = "left"
 [sections.cta]
-text = "Erfahren Sie mehr"
+text = "Besuchen Sie unser Green Data Center"
 url = "https://www.green-data-center.de/"
 external = true
 
@@ -65,6 +65,6 @@ description = "Unternehmenseigene Wissensdatenbanken und KI-Suche – schneller,
 quote = "... volle Kontrolle ..."
 content = "Mit Hippo Chat behalten Sie die volle Kontrolle über Ihre Daten und erhalten effizientes Wissensmanagement und nahtlose Integration in Ihre bestehende IT-Infrastruktur."
 name = "Dr. Thomas Fraunholz"
-position = "CEO&Founder"
+position = "CEO & Founder"
 image = "/images/Profile.png"
 +++

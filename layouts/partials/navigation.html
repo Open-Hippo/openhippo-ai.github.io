@@ -24,10 +24,32 @@
           <!-- Navigation Menu -->
           <nav role="navigation" class="nav-menu-white w-nav-menu">
             {{- range site.Menus.main }}
-            <a href="{{ .URL | relURL }}" 
-               class="nav-link-black w-nav-link{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} w--current{{ end }}">
-              {{ .Name }}
-            </a>
+              {{- if .HasChildren }}
+              <!-- Dropdown Menu -->
+              <div class="nav-dropdown" data-dropdown>
+                <a href="#" class="nav-link-dropdown w-nav-link" data-dropdown-toggle>
+                  {{ .Name }}
+                  <span class="dropdown-arrow">
+                    <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 8.5L1.5 4L2.55 2.95L6 6.4L9.45 2.95L10.5 4L6 8.5Z"/>
+                    </svg>
+                  </span>
+                </a>
+                <div class="dropdown-menu">
+                  {{- range .Children }}
+                  <a href="{{ .URL | relURL }}" class="dropdown-item">
+                    {{ .Name }}
+                  </a>
+                  {{- end }}
+                </div>
+              </div>
+              {{- else }}
+              <!-- Regular Menu Item -->
+              <a href="{{ .URL | relURL }}" 
+                 class="nav-link-black w-nav-link{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} w--current{{ end }}">
+                {{ .Name }}
+              </a>
+              {{- end }}
             {{- end }}
             
             <!-- CTA Button -->

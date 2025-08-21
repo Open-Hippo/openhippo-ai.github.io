@@ -159,16 +159,16 @@ h3 {
 }
 
 .hero-stack {
-  grid-row-gap: 80px;
-  background-color: #fff;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  padding: 64px 24px;
-  text-decoration: none;
-  display: flex;
-}
+    grid-row-gap: 80px;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 100px 24px 64px;
+    text-decoration: none;
+    display: flex;
+  }
 
 .small-container {
   grid-row-gap: 40px;
@@ -466,7 +466,7 @@ h3 {
   align-items: center;
   width: 100%;
   height: 720px;
-  padding: 64px 24px;
+  padding: 120px 24px 64px;
   display: flex;
 }
 
@@ -690,7 +690,7 @@ h3 {
   align-items: center;
   width: 100%;
   height: 720px;
-  padding: 80px 160px;
+  padding: 140px 160px 80px;
   display: flex;
 }
 
@@ -934,13 +934,15 @@ h3 {
 }
 
 .heading-1 {
+  padding-top: 20px;
+  font-size: 5em;
   color: var(--secondary);
   text-align: center;
   letter-spacing: -.02em;
   margin-top: 0;
   margin-bottom: 0;
   font-family: Luckiest Guy, sans-serif;
-  font-size: 8.5em;
+  font-size: 6em;
   font-weight: 700;
   line-height: .95;
 }
@@ -961,7 +963,7 @@ h3 {
   align-items: center;
   width: 100%;
   margin-top: 20px;
-  padding-top: 0;
+  padding-top: 100px;
   padding-bottom: 0;
   display: flex;
 }
@@ -2106,7 +2108,6 @@ h3 {
   align-self: center;
   align-items: flex-start;
   height: 100%;
-  margin-bottom: 40px;
   padding: 6em;
   display: flex;
 }
@@ -2128,7 +2129,6 @@ h3 {
   max-width: 50%;
   padding-top: 4em;
   padding-bottom: 4em;
-  padding-right: 4em;
   display: flex;
 }
 
@@ -3831,7 +3831,9 @@ h3 {
   }
 
   .main-grid-no-gap.hero-section {
-    margin-top: 20px;
+    margin-top: 0;
+    padding-top: 20px;
+    display: flex;
   }
 
   .hero-section {
@@ -3979,7 +3981,7 @@ h3 {
   }
 
   .heading-1 {
-    font-size: 4em;
+    font-size: 5em;
   }
 
   .main-grid-no-gap {
@@ -4149,7 +4151,7 @@ h3 {
 
   .inner-rounded-img-float {
     max-width: none;
-    padding-left: 4em;
+    padding: 0px;
   }
 
   .rounded-box-banner {
@@ -4448,11 +4450,11 @@ h3 {
   }
 
   .heading-1 {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   .left-hero {
-    padding-top: 0;
+    padding-top: 40px;
     padding-bottom: 0;
   }
 
@@ -4469,7 +4471,7 @@ h3 {
   }
 
   .heading-large {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .rounded-container {
@@ -4756,6 +4758,42 @@ h3 {
 }
 
 @media screen and (max-width: 479px) {
+  .walsh-main-grid-no-gap {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Testimonial section mobile layout */
+  .wrapper .w-layout-grid.main-grid-no-gap {
+    flex-direction: column !important;
+    display: flex !important;
+  }
+  
+  /* Person's image - should appear first on mobile */
+  .wrapper .walsh-cta-inner-image {
+    order: 1 !important;
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    padding-top: 0;
+    padding-bottom: 2em;
+    justify-content: center;
+  }
+  
+  .wrapper .walsh-cta-inner-image img {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  
+  /* Quote and text content - should appear second on mobile */
+  .wrapper .cta-h-wrapper {
+    order: 2 !important;
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    padding-top: 0;
+  }
+  
   .image-hero-device {
     width: 25vw;
     height: auto;
@@ -4795,8 +4833,12 @@ h3 {
     background-size: auto 56%;
   }
 
+  .heading-large {
+    font-size: 2em;
+  }
+
   .heading-1 {
-    font-size: 2.7em;
+    font-size: 3em;
   }
 
   .left-hero {
@@ -4895,7 +4937,7 @@ h3 {
   }
 
   .main-paragraph {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .content-wrap {
@@ -4949,12 +4991,13 @@ h3 {
   }
 
   .inner-rounded-banner {
-    padding-left: 10px;
-    padding-right: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 45px 30px 30px;
   }
 
   .inner-rounded-img-float {
-    padding: 30px;
+    padding: 0px;
   }
 
   .container {
@@ -5075,6 +5118,22 @@ h3 {
 
   .walsh-cta-inner-image {
     padding-top: 0;
+  }
+  
+  /* Additional specificity for testimonial mobile layout */
+  .wrapper .walsh-container-2 .w-layout-grid.main-grid-no-gap {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  .wrapper .walsh-container-2 .walsh-cta-inner-image {
+    order: -1 !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .wrapper .walsh-container-2 .cta-h-wrapper {
+    order: 1 !important;
   }
 
   .walsh-text-small-white {

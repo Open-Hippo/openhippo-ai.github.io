@@ -1,12 +1,12 @@
 <!-- Footer Component -->
 <div class="content-wrapper-white">
   <div class="walsh-container">
-    <div class="w-layout-grid main-grid-2">
-      <!-- Logo -->
-      <div id="w-node-_6f43c7f0-6126-97d2-d0c4-aaf2d087a604-d087a601">
+    <div class="footer-content">
+      <!-- Logo Section -->
+      <div class="footer-logo-section">
         <img src="{{ "/images/Logo-OpenHippo-f-rgb.png" | relURL }}" 
              loading="lazy" 
-             sizes="(max-width: 2882px) 100vw, 2882px" 
+             sizes="(max-width: 400px) 100vw, 400px" 
              srcset="{{ "/images/Logo-OpenHippo-f-rgb-p-500.png" | relURL }} 500w, 
                      {{ "/images/Logo-OpenHippo-f-rgb-p-800.png" | relURL }} 800w, 
                      {{ "/images/Logo-OpenHippo-f-rgb-p-1080.png" | relURL }} 1080w, 
@@ -18,25 +18,65 @@
              class="logo-footer">
       </div>
       
-      <!-- Footer Menu -->
-      <div id="w-node-_6f43c7f0-6126-97d2-d0c4-aaf2d087a60d-d087a601" class="footer-inner-menu">
-        <a href="{{ "/" | relURL }}" class="footer-link{{ if .IsHome }} w--current{{ end }}">Home</a>
-        {{- range site.Menus.main }}
-        <a href="{{ .URL | relURL }}" 
-           class="footer-link{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} w--current{{ end }}">
-          {{ .Name }}
-        </a>
-        {{- end }}
-        <a href="{{ "/legalnotice/" | relURL }}" class="footer-link">Impressum</a>
-        <a href="{{ "/privacypolicy/" | relURL }}" class="footer-link">Datenschutzerklärung</a>
-      </div>
-      
-      <!-- Copyright -->
-      <div id="w-node-_6f43c7f0-6126-97d2-d0c4-aaf2d087a606-d087a601" class="footer-inner">
-        <div class="footer-legal-text">© {{ now.Format "2006" }}</div>
-        <div class="footer-legal-text">
-          Designed by <a href="https://www.verola-design.com/" class="link">verola.design</a>
+      <!-- Footer Navigation Columns -->
+      <div class="footer-nav-columns">
+        <!-- Home Column -->
+        <div class="footer-column">
+          <h3 class="footer-heading">Home</h3>
+          <a href="{{ "/" | relURL }}" class="footer-link{{ if .IsHome }} w--current{{ end }}">Startseite</a>
         </div>
+        
+        <!-- Produkte Column -->
+        <div class="footer-column">
+          <h3 class="footer-heading">Produkte</h3>
+          {{- range site.Menus.main }}
+            {{- if eq .Identifier "produkte" }}
+              {{- range .Children }}
+              <a href="{{ .URL | relURL }}" class="footer-link">{{ .Name }}</a>
+              {{- end }}
+            {{- end }}
+          {{- end }}
+        </div>
+        
+        <!-- Dienste Column -->
+        <div class="footer-column">
+          <h3 class="footer-heading">Dienste</h3>
+          {{- range site.Menus.main }}
+            {{- if eq .Identifier "dienste" }}
+              {{- range .Children }}
+              <a href="{{ .URL | relURL }}" class="footer-link">{{ .Name }}</a>
+              {{- end }}
+            {{- end }}
+          {{- end }}
+        </div>
+        
+        <!-- Lösungen Column -->
+        <div class="footer-column">
+          <h3 class="footer-heading">Beispiele</h3>
+          {{- range site.Menus.main }}
+            {{- if eq .Identifier "beispiele" }}
+              {{- range .Children }}
+              <a href="{{ .URL | relURL }}" class="footer-link">{{ .Name }}</a>
+              {{- end }}
+            {{- end }}
+          {{- end }}
+        </div>
+        
+        <!-- Legal Column -->
+        <div class="footer-column">
+          <h3 class="footer-heading">Rechtliches</h3>
+          <a href="{{ "/legalnotice/" | relURL }}" class="footer-link">Impressum</a>
+          <a href="{{ "/privacypolicy/" | relURL }}" class="footer-link">Datenschutzerklärung</a>
+          <a href="{{ "/termsofservice/" | relURL }}" class="footer-link">AGB</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+      <div class="footer-legal-text">© {{ now.Format "2006" }} Open Hippo</div>
+      <div class="footer-legal-text">
+        Designed by <a href="https://www.verola-design.com/" class="link">verola.design</a>
       </div>
     </div>
   </div>
